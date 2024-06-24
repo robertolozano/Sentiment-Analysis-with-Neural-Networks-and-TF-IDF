@@ -6,6 +6,7 @@ This project focuses on sentiment analysis using a neural network model implemen
 
 - [Introduction](#introduction)
 - [Dataset](#dataset)
+- [Examples](#examples)
 - [Requirements](#requirements)
 - [Usage](#usage)
 - [Model Architecture](#model-architecture)
@@ -24,6 +25,23 @@ This project demonstrates an end-to-end workflow of sentiment analysis, from tex
 - **Training Data:** `x_train.csv` and `y_train.csv`
 - **Test Data:** `x_test.csv`
 - The text data is preprocessed by converting it to lowercase and then transformed into TF-IDF vectors for feature extraction.
+- The dataset consists of reviews from websites such as Amazon, Yelp, and IMDb.
+  - Examples:
+    - **"There is no plot here to keep you going in the first place."**
+    - **"Of all the dishes, the salmon was the best, but all were great."**
+
+# Examples
+
+**Examples of the sentiment analysis predictions:**
+
+- Negative Sentiment
+
+  - Input: "There is no plot here to keep you going in the first place."
+  - Output: 0
+
+- Positive Sentiment
+  - Input: "Of all the dishes, the salmon was the best, but all were great."
+  - Output: 1
 
 ## Requirements
 
@@ -78,6 +96,7 @@ Evaluating model performance using validation accuracy.
 
 After training, the model is used to predict sentiments on the test data.
 The predictions are saved to y_prediction.txt.
+The model will predict **1** if the sentiment is positive and **0** if the sentiment is negative.
 
 ## Results
 
